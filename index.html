@@ -1,59 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Jason Devito</h1>
-        <p>Computer Engineering | University of Central Florida</p>
-        <nav>
-            <ul>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section id="projects">
-            <h2>Projects</h2>
+  <header class="header">
+    <div class="nav-container">
+      <h1 class="logo">Jason T. Devito</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-            <div class="project">
-                <h3>Journey Journal</h3>
-                <p>
-                    A <strong>full-stack journaling application</strong> that allowed users to log and rate their travel experiences. 
-                    The backend was built using <strong>Node.js, Express, and MongoDB</strong>, with a mobile companion app developed in <strong>Flutter</strong>.
-                    I contributed to building the <strong>APIs, backend, and part of the frontend</strong>. 
-                    We used <strong>SwaggerHub</strong> for API documentation.
-                </p>
-                <p><strong>Note:</strong> The server is no longer running due to payment reasons, but all the code is available.</p>
-                <p><a href="https://github.com/JT5016/Journey-Journal-Project.git" target="_blank">View on GitHub</a></p>
-            </div>
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <!-- New container for images at the top -->
+      <div class="hero-images">
+        <img src="images/profile.jpg" alt="Your Photo" class="profile-img">
+        <img src="images/ucf-logo.png" alt="UCF Logo" class="ucf-logo">
+      </div>
+      <h2 class="hero-title">Computer Engineer</h2>
+      <p class="hero-description">Passionate about building solutions that make a difference.</p>
+      <a href="#projects" class="hero-button">View My Work</a>
+    </div>
+  </section>
 
-            <div class="project">
-                <h3>Contact Manager</h3>
-                <p>
-                    A <strong>contact management system</strong> allowing users to add, delete, and update contacts with a user-friendly interface.
-                    Built using <strong>SQL, PHP, HTML, CSS, and JavaScript</strong>. 
-                    I worked on the <strong>SQL database and backend PHP functionalities</strong> to handle user data securely.
-                </p>
-                <p><a href="https://github.com/yourusername/contact-manager" target="_blank">View on GitHub</a></p>
-            </div>
-        </section>
-    </main>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: your.email@example.com</p>
-        <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
-    </footer>
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="project-card">
+      <h3>Journey Journal</h3>
+      <p>
+        A <strong>full-stack journaling application</strong> that allowed users to log and rate their travel experiences. 
+        The backend was built using <strong>Node.js, Express, and MongoDB</strong>, with a mobile companion app developed in 
+        <strong>Flutter</strong>. I contributed to building the <strong>APIs, backend, and part of the frontend</strong>. 
+        We used <strong>SwaggerHub</strong> for API documentation.
+      </p>
+      <p><strong>Note:</strong> The server is no longer running due to payment reasons, but all the code is available.</p>
+      <p>
+        <!-- Main repo link -->
+        <a href="https://github.com/JT5016/Journey-Journal-Project.git" target="_blank" class="btn-link">View Web App on Github</a>
+      </p>
+      <p>
+        <!-- Mobile app repo link -->
+        <a href="https://github.com/JT5016/Mobile-app.git" target="_blank" class="btn-link">View Mobile App on Github</a>
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>Contact Manager</h3>
+      <p>
+        A <strong>contact management system</strong> allowing users to add, delete, and update contacts with a user-friendly interface.
+        Built using <strong>SQL, PHP, HTML, CSS, and JavaScript</strong>. 
+        I worked on the <strong>SQL database and backend PHP functionalities</strong> to handle user data securely.
+      </p>
+      <a href="https://github.com/JT5016/Contact-Manager.git" target="_blank" class="btn-link">View on GitHub</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2 class="section-title">Contact</h2>
+    <p>Email: <strong>jasondevito1029@gmail.com</strong></p>
+    <p>GitHub: 
+      <a href="https://github.com/JT5016" target="_blank">github.com/JT5016</a>
+    </p>
+    <p>LinkedIn: 
+      <a href="https://www.linkedin.com/in/jason-devito-63b9242aa" target="_blank">
+        www.linkedin.com/in/jason-devito-63b9242aa
+      </a>
+    </p>
+  </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
