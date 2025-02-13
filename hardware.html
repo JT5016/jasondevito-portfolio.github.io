@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hardware Projects - Jason DeVito</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Reuse the same header if you want a consistent nav across pages -->
+  <header class="header">
+    <div class="nav-container">
+      <h1 class="logo">Jason DeVito</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="hardware.html" style="font-weight:bold;">Hardware</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hardware-section">
+    <h2 class="section-title">Hardware Projects</h2>
+    <p class="section-description">
+      Here are some of the hardware projects i've built
+    </p>
+
+    <div class="hardware-gallery">
+      <!-- Example 1 -->
+      <div class="hardware-card">
+        <img src="images/hardware-project1.jpg" alt="Hardware Project 1" class="hardware-img1">
+        <h3>PCB Range Finder</h3>
+        <p>
+        	Custom PCB created in Fusion 360, integrating both 3.3V and 5V regulators based on TI reference circuits. 
+            This project utilizes an MSP430 microcontroller paired with an ultrasonic sensor to measure distance. 
+            The MSP430 processes these signals, providing accurate readings while maintaining low power consumption. 
+            The compact PCB integrates power regulation, sensor connections, and headers for easy programming
+        </p>
+      </div>
+
+      <!-- Example 2 -->
+      <div class="hardware-card">
+        <img src="images/hardware-project2.jpg" alt="Hardware Project 2" class="hardware-img2">
+        <h3>PCB Range Finder Prototype</h3>
+        <p>
+          Here is the prototype for the PCB Range Finder. This shows the various electrical components and steps that went into creating the final product.
+          This process included programming the MSP 430 using a breadboard to perform the tasks needed by the sensor on the PCB.
+        </p>
+      </div>
+
+      <!-- Add more hardware project cards as needed -->
+    </div>
+  </section>
+
+  <!-- Reuse your footer if you want to keep consistent branding -->
+  <footer class="footer">
+    <p>&copy; 2025 Jason DeVito. All rights reserved.</p>
+  </footer>
+</body>
+</html>

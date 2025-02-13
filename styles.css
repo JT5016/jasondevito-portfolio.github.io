@@ -185,4 +185,56 @@
     font-size: 0.9rem;
     border-top: 1px solid #ddd;
   }
+  /* Hardware Section */
+.hardware-section {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.hardware-section .section-description {
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.hardware-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.hardware-card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: left;
+}
+
+.hardware-img1 {
+  width: 90%;
+  height: 370px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.hardware-img2 {
+  width: 75%;
+  height: 200x;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.hardware-card h3 {
+  color: #2193b0;
+  margin-bottom: 10px;
+}
+
+.hardware-card p {
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
   
