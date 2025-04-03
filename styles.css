@@ -134,10 +134,10 @@
   
   .project-card {
     background-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     padding: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
   
   .project-card h3 {
@@ -157,6 +157,14 @@
     margin-top: 10px;
     text-decoration: none;
     color: #007bff;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  .btn-link1 {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #ff0015;
     font-weight: bold;
     transition: 0.3s;
   }
@@ -213,6 +221,7 @@
   text-align: left;
 }
 
+
 .hardware-img1 {
   width: 90%;
   height: 370px;
@@ -228,8 +237,26 @@
   margin-bottom: 15px;
 }
 .hardware-card h3 {
-  color: #2193b0;
+  color: #b02121;
   margin-bottom: 10px;
+}
+
+.hardware-card1 {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.hardware-card1 h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #b02121;
+}
+.hardware-card1 p {
+  line-height: 1.6;
+  margin-bottom: 0;
 }
 
 .hardware-card p {
