@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- Header & Navigation -->
   <header class="header">
     <div class="nav-container">
       <h1 class="logo">Jason Devito</h1>
@@ -23,14 +24,17 @@
   <!-- Hero Section -->
   <section id="hero" class="hero">
     <div class="hero-content">
-      <!-- New container for images at the top -->
       <div class="hero-images">
-        <img src="images/profile.jpg" alt="Your Photo" class="profile-img">
-        <img src="images/ucf-logo.png" alt="UCF Logo" class="ucf-logo">
+        <img src="images/profile.jpg" alt="Your Photo" class="profile-img" />
+        <img src="images/ucf-logo.png" alt="UCF Logo" class="ucf-logo" />
       </div>
       <h2 class="hero-title">Computer Engineer</h2>
-      <p class="hero-description">I leverage my passion for both hardware and software to create innovative, efficient solutions. With hands-on experience in designing integrated systems and developing robust software, I strive to bridge the gap between digital and physical technologies, 
-        driving progress and transforming ideas into real-world impact.</p>
+      <p class="hero-description">
+        I leverage my passion for both hardware and software to create innovative, efficient solutions. With
+        hands-on experience in designing integrated systems and developing robust software, I strive to bridge
+        the gap between digital and physical technologies, driving progress and transforming ideas into real-world
+        impact.
+      </p>
       <a href="#projects" class="hero-button">View My Work</a>
     </div>
   </section>
@@ -39,83 +43,145 @@
   <section id="projects" class="projects-section">
     <h2 class="section-title">Projects</h2>
 
+    <!-- Journey Journal -->
     <div class="project-card">
       <h3>Journey Journal</h3>
       <p>
-        A <strong>full-stack journaling application</strong> that allowed users to log and rate their travel experiences. 
-        The backend was built using <strong>Node.js, Express, and MongoDB</strong>, with a mobile companion app developed in 
-        <strong>Flutter</strong>. I contributed to building the <strong>APIs, backend, and part of the frontend</strong>. 
-        We used <strong>SwaggerHub</strong> for API documentation.
+        A <strong>full-stack journaling application</strong> that allowed users to log and rate their travel
+        experiences. The backend was built using <strong>Node.js, Express, and MongoDB</strong>, with a mobile
+        companion app developed in <strong>Flutter</strong>. I contributed to building the <strong>APIs,
+        backend, and part of the frontend</strong>. We used <strong>SwaggerHub</strong> for API documentation.
       </p>
       <p><strong>Note:</strong> The server is no longer running due to payment reasons, but all the code is available.</p>
       <p>
-        <!-- Main repo link -->
-        <a href="https://github.com/JT5016/Journey-Journal-Project.git" target="_blank" class="btn-link">View Web App on Github</a>
+        <a
+          href="https://github.com/JT5016/Journey-Journal-Project.git"
+          target="_blank"
+          class="btn-link"
+          >View Web App on GitHub</a
+        >
       </p>
       <p>
-        <!-- Mobile app repo link -->
-        <a href="https://github.com/JT5016/Mobile-app.git" target="_blank" class="btn-link">View Mobile App on Github</a>
+        <a
+          href="https://github.com/JT5016/Mobile-app.git"
+          target="_blank"
+          class="btn-link"
+          >View Mobile App on GitHub</a
+        >
       </p>
     </div>
-   
+
+    <!-- House Price Prediction ML Model -->
     <div class="project-card">
       <h3>House Price Prediction ML Model</h3>
       <p>
-        An interactive <strong>machine learning project</strong> that predicts house sale prices using a <strong>linear regression model</strong>. 
-        The model was trained on the <strong>Kaggle House Prices</strong> dataset after data preprocessing and a log-transformation of the target variable. 
-        The interactive web app was built using <strong>Python, Scikit-Learn, and Streamlit</strong>.
+        An interactive <strong>machine learning project</strong> that predicts house sale prices using a
+        <strong>linear regression model</strong>. The model was trained on the <strong>Kaggle House Prices</strong>
+        dataset after data preprocessing and a log-transformation of the target variable. The interactive web app
+        was built using <strong>Python, Scikit-Learn, and Streamlit</strong>.
+      </p>
+      <p>Users can input various house features and receive a predicted sale price instantly.</p>
+      <p>
+        <a
+          href="https://github.com/JT5016/House-price-ML-model.git"
+          target="_blank"
+          class="btn-link"
+          >View Project on GitHub</a
+        >
       </p>
       <p>
-        Users can input various house features and receive a predicted sale price instantly.
-      </p>
-      <p>
-        <a href="https://github.com/JT5016/House-price-ML-model.git" target="_blank" class="btn-link">View Project on GitHub</a>
-      </p>
-      <p>
-        <a href="https://house-price-ml-model-xyz.streamlit.app/" target="_blank" class="btn-link">Live Demo on Streamlit</a>
+        <a
+          href="https://house-price-ml-model-xyz.streamlit.app/"
+          target="_blank"
+          class="btn-link"
+          >Live Demo on Streamlit</a
+        >
       </p>
     </div>
-    
 
+    <!-- Contact Manager -->
     <div class="project-card">
       <h3>Contact Manager</h3>
       <p>
-        A <strong>contact management system</strong> allowing users to add, delete, and update contacts with a user-friendly interface.
-        Built using <strong>SQL, PHP, HTML, CSS, and JavaScript</strong>. 
-        I worked on the <strong>SQL database and backend PHP functionalities</strong> to handle user data securely.
+        A <strong>contact management system</strong> allowing users to add, delete, and update contacts with a
+        user-friendly interface. Built using <strong>SQL, PHP, HTML, CSS, and JavaScript</strong>. I worked on the
+        <strong>SQL database and backend PHP functionalities</strong> to handle user data securely.
       </p>
-      <a href="https://github.com/JT5016/Contact-Manager.git" target="_blank" class="btn-link">View on GitHub</a>
+      <a
+        href="https://github.com/JT5016/Contact-Manager.git"
+        target="_blank"
+        class="btn-link"
+        >View on GitHub</a
+      >
     </div>
-  <!-- Hardware Projects -->
+
+    <!-- UEMS (University Event Management System) -->
+    <div class="project-card">
+      <h3>UEMS (University Event Management System)</h3>
+      <p>
+        A <strong>University Event Management System</strong> built with a traditional LAMP-style stack. The backend
+        is powered by <strong>MySQL</strong> and <strong>PHP</strong>, while the client side uses
+        <strong>JavaScript</strong>, <strong>HTML</strong>, and <strong>CSS</strong>. This application lets students
+        and admins create, approve, and manage campus events from a simple web interface, as well as import events from university website, and choose a location via a map API.
+      </p>
+
+      <p>
+        <a href="https://github.com/JT5016/DatabaseProject.git" target="_blank" class="btn-link"
+          >View UEMS on GitHub</a
+        >
+      </p>
+    </div>
+
+    <!-- Natural-Language → SQL Query Converter -->
+    <div class="project-card">
+      <h3>Natural-Language to SQL Query Converter</h3>
+      <p>
+        A tool that takes plain-English questions and turns them into valid SQL queries. The frontend is built in
+        <strong>React</strong>, and the backend is a <strong>Node.js</strong> server. Internally, it calls the
+        <strong>ChatGPT API</strong> to translate user-entered text (e.g., “Show me all students enrolled in Spring
+        2024”) into a parametrized SQL statement. Once ChatGPT generates the SQL, the server executes it and returns results.
+      </p>
+      <p>
+        <a
+          href="https://github.com/JT5016/OPENAI-SQL-app.git"
+          target="_blank"
+          class="btn-link"
+          >View NL→SQL Converter on GitHub</a
+        >
+      </p>
+    </div>
+
+    <!-- Hardware Projects Card (Full-Width Bottom) -->
     <div class="hardware-card1">
       <h3>Hardware Projects</h3>
       <p>
-        Check out some of the hardware and embedded systems I've worked on, featuring microcontrollers, sensors, electronic circuits, and more.
+        Check out some of the hardware and embedded systems I've worked on, featuring microcontrollers, sensors,
+        electronic circuits, and more.
       </p>
       <a href="hardware.html" class="btn-link">View Hardware Projects</a>
     </div>
-    
-    
   </section>
 
   <!-- Contact Section -->
   <section id="contact" class="contact-section">
     <h2 class="section-title">Contact</h2>
     <p>Email: <strong>jasondevito1029@gmail.com</strong></p>
-    <p>GitHub: 
+    <p>
+      GitHub:
       <a href="https://github.com/JT5016" target="_blank">github.com/JT5016</a>
     </p>
-    <p>LinkedIn: 
-      <a href="https://www.linkedin.com/in/jason-devito-63b9242aa" target="_blank">
-        www.linkedin.com/in/jason-devito-63b9242aa
-      </a>
-    <p>Mobile Number: 772-486-6211</p>
+    <p>
+      LinkedIn:
+      <a href="https://www.linkedin.com/in/jason-devito-63b9242aa" target="_blank"
+        >www.linkedin.com/in/jason-devito-63b9242aa</a
+      >
     </p>
+    <p>Mobile Number: 772-486-6211</p>
   </section>
+
   <!-- Footer -->
   <footer class="footer">
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
+    <p>&copy; 2025 Jason Devito. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
