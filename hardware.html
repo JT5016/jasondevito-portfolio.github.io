@@ -14,7 +14,7 @@
       <nav>
         <ul class="nav-links">
           <li><a href="index.html#hero">Home</a></li>
-          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#software-projects">Software</a></li>
           <li><a href="hardware.html" style="font-weight:bold;">Hardware</a></li>
           <li><a href="index.html#contact">Contact</a></li>
         </ul>
@@ -22,51 +22,257 @@
     </div>
   </header>
 
-
   <section class="hardware-section">
-    <h2 class="section-title">Hardware Projects</h2>
-    <p class="section-description">
-      Here are some of the hardware projects 
-    </p>
+    <div class="section-header">
+      <span class="section-icon">⚡</span>
+      <h2 class="section-title">Hardware & Embedded Systems Projects</h2>
+      <p class="section-description">
+        Explore my hardware engineering projects featuring microcontroller programming, PCB design, sensor integration, and IoT control systems with real-world applications.
+      </p>
+    </div>
+
+    <!-- Featured PUMPED Hardware Project -->
+    <div class="project-card featured-project">
+      <div class="project-badge">Featured Hardware Project</div>
+      <h2><strong>PUMPED IoT Control System</strong></h2>
+      <h3>Multi-Variable Embedded Control & Hardware Integration</h3>
+      
+      <p><strong>PUMPED</strong> represents a comprehensive hardware engineering project featuring <strong>custom PCB design, multi-rail power systems, and advanced embedded control algorithms</strong>. The system integrates multiple sensor networks, precision measurement circuits, and automated control systems to create a complete IoT-enabled device.</p>
+
+      <div class="feature-list">
+        <h4><strong>🔌 Multi-Rail Power Distribution System</strong></h4>
+        <p>Custom PCB design featuring <strong>3V, 5V, and 12V voltage regulators</strong> with full-wave rectifier circuits and advanced filtering. Engineered power management supporting simultaneous operation of 6+ peripheral devices with 95% efficiency and <50mV ripple voltage.</p>
+
+        <h4><strong>⚙️ Real-Time Control System Architecture</strong></h4>
+        <p><strong>ESP32-based control system</strong> implementing closed-loop temperature regulation using dual-channel SSR switching with 300ms sampling intervals. Maintains ±0.5°C precision during heating cycles through continuous K-type thermocouple feedback and sophisticated state machine implementation.</p>
+
+        <h4><strong>📡 Precision Sensor Integration</strong></h4>
+        <p><strong>HX711 24-bit ADC</strong> custom amplifier PCB with differential signal conditioning achieving ±2g measurement accuracy across 10kg load cell range. Integrated MAX6675 K-type thermocouple amplifier via SPI communication with 0.25°C resolution and proper EMI filtering.</p>
+
+        <h4><strong>🔧 Advanced PCB Design & Layout</strong></h4>
+        <p><strong>Mixed-signal PCB architecture</strong> integrating analog temperature sensing, high-speed digital interfaces (SPI, I²C), and high-current switching circuits. Features proper ground planes, isolation techniques, and thermal management for reliable operation.</p>
+
+        <h4><strong>⚡ Smart Relay Control Networks</strong></h4>
+        <p><strong>Optical isolation and flyback protection</strong> circuits enabling safe 12V heating element switching while preventing EMI interference. Designed for rapid on/off cycling with comprehensive fault detection and safety interlocks.</p>
+
+        <h4><strong>💻 Embedded Firmware Development</strong></h4>
+        <p><strong>Multi-threaded embedded C++ firmware</strong> managing concurrent sensor acquisition, real-time control algorithms, wireless communication, and user interface. Implements sophisticated button debouncing, error handling, and automated process sequencing.</p>
+      </div>
+
+      <!-- Image placeholders for PUMPED hardware -->
+      <div class="hardware-gallery">
+        <div class="hardware-card">
+          <a href="#modal1">
+            <img src="images/pumped-pcb-main.png" alt="PUMPED Main PCB Board" class="hardware-img1">
+          </a>
+          <h3>Main Control PCB</h3>
+          <p>ESP32-based main control board with integrated power management, sensor interfaces, and communication modules.</p>
+        </div>
+
+        <div class="hardware-card">
+          <a href="#modal2">
+            <img src="images/pumped-power-pcb33.jpg" alt="PUMPED 3.3V Regulator" class="hardware-img2">
+          </a>
+          <h3>PUMPED 3.3V Regulator PCB</h3>
+          <p>3.3V voltage regulator circuit with precision filtering and thermal management for low-power components.</p>
+        </div>
+        
+        <div class="hardware-card">
+          <a href="#modal7">
+            <img src="images/pumped-power-pcb5.jpg" alt="PUMPED 5V Regulator" class="hardware-img2">
+          </a>
+          <h3>PUMPED 5V Regulator</h3>
+          <p>5V power supply circuit with current limiting and protection features for digital components.</p>
+        </div>
+        
+        <div class="hardware-card">
+          <a href="#modal8">
+            <img src="images/pumped-power-pcb12.jpg" alt="PUMPED 12V Regulator" class="hardware-img2">
+          </a>
+          <h3>PUMPED 12V Regulator</h3>
+          <p>12V high-current regulator for heating elements and thermal printer power supply.</p>
+        </div>
+
+        <div class="hardware-card">
+          <a href="#modal3">
+            <img src="images/pumped-sensor-pcb.jpg" alt="PUMPED Sensor Interface PCB" class="hardware-img1">
+          </a>
+          <h3>Sensor Interface Board</h3>
+          <p>HX711 amplifier PCB with precision load cell interface and thermocouple signal conditioning circuits.</p>
+        </div>
+
+        <div class="hardware-card">
+          <a href="#modal4">
+            <img src="images/pumped-complete-system.jpg" alt="PUMPED Complete Hardware System" class="hardware-img2">
+          </a>
+          <h3>Complete System Integration</h3>
+          <p>Fully assembled PUMPED device showing mechanical integration, wiring harnesses, and thermal printer integration.</p>
+        </div>
+      </div>
+
+      <h3><strong>Technical Specifications:</strong></h3>
+      <div class="tech-stack-grid">
+        <div class="tech-category">
+          <h4>Microcontroller</h4>
+          <p>ESP32 dual-core with WiFi/Bluetooth</p>
+        </div>
+        <div class="tech-category">
+          <h4>Power Management</h4>
+          <p>3V/5V/12V regulators, rectifier circuits</p>
+        </div>
+        <div class="tech-category">
+          <h4>Sensors</h4>
+          <p>K-type thermocouple, 10kg load cell</p>
+        </div>
+        <div class="tech-category">
+          <h4>Communication</h4>
+          <p>SPI, I²C, UART, WiFi, HTTP/HTTPS</p>
+        </div>
+        <div class="tech-category">
+          <h4>Control Systems</h4>
+          <p>Dual-channel SSR, relay networks</p>
+        </div>
+        <div class="tech-category">
+          <h4>Programming</h4>
+          <p>Embedded C++, PlatformIO, FreeRTOS</p>
+        </div>
+        <div class="tech-category">
+          <h4>PCB Design</h4>
+          <p>Fusion 360, mixed-signal layout</p>
+        </div>
+        <div class="tech-category">
+          <h4>Interfaces</h4>
+          <p>20x4 LCD, thermal printer, buttons</p>
+        </div>
+      </div>
+
+    </div>
 
     <div class="hardware-gallery">
-      <!-- Example 1 -->
+      <!-- PCB Range Finder -->
       <div class="hardware-card">
-        <img src="images/hardware-project1.jpg" alt="Hardware Project 1" class="hardware-img1">
+        <a href="#modal5">
+          <img src="images/hardware-project1.jpg" alt="PCB Range Finder" class="hardware-img1">
+        </a>
         <h3>PCB Range Finder</h3>
         <p>
-        	Custom PCB created in Fusion 360, integrating both 3.3V and 5V regulators based on TI reference circuits. 
-            This project utilizes an MSP430 microcontroller paired with an ultrasonic sensor to measure distance. 
-            The MSP430 processes these signals, providing accurate readings while maintaining low power consumption. 
-            The compact PCB integrates power regulation, sensor connections, and headers for easy programming
+          Custom PCB created in Fusion 360, integrating both 3.3V and 5V regulators based on TI reference circuits. This project utilizes an MSP430 microcontroller paired with an ultrasonic sensor to measure distance. The MSP430 processes these signals, providing accurate readings while maintaining low power consumption. The compact PCB integrates power regulation, sensor connections, and headers for easy programming.
         </p>
       </div>
 
-      <!-- Example 2 -->
+      <!-- PCB Prototype -->
       <div class="hardware-card">
-        <img src="images/hardware-project2.jpg" alt="Hardware Project 2" class="hardware-img2">
+        <a href="#modal6">
+          <img src="images/hardware-project2.jpg" alt="PCB Range Finder Prototype" class="hardware-img2">
+        </a>
         <h3>PCB Range Finder Prototype</h3>
         <p>
-          Here is the prototype for the PCB Range Finder. This shows the various electrical components and steps that went into creating the final product.
-          This process included programming the MSP 430 using a breadboard to perform the tasks needed by the sensor on the PCB.
+          Breadboard prototype for the PCB Range Finder showing the development process and component integration. This prototype phase included programming the MSP430 microcontroller to interface with the ultrasonic sensor, validate timing requirements, and test power consumption characteristics before PCB fabrication. Demonstrates iterative hardware development methodology.
         </p>
       </div>
- <div class="hardware-card1">
-      <h3>Embedded Code for MSP 430 PCB range finder</h3>
-      <p>
-        This code features the embedded firmware developed for the MSP430 used on the PCB range finder.The software integrates an ultrasonic sensor, LCD display, analog-to-digital conversion, I2C communication, and configures timers to trigger an ultrasonic sensor reading. 
-        It then processes the sensor's echo to calculate distance (displayed in millimeters and inches) and reads a potentiometer value to adjust a PWM duty cycle. 
-        All of these real-time measurements are displayed on an LCD, along with visual feedback from toggled LEDs.
-      </p>
-      <p>
-        <!-- Main repo link -->
-        <a href="https://github.com/JT5016/EmbeddedSystemsCode.git" target="_blank" class="btn-link">View PCB Embedded Code</a>
-      </p>
-      </p>
     </div>
-      <!-- Add more hardware project cards as needed -->
+
+    <!-- Embedded Code Section -->
+    <div class="hardware-card1">
+      <h3>Embedded Firmware Development</h3>
+      <p>
+        Comprehensive embedded firmware portfolio featuring real-time control systems, sensor integration, and communication protocols. The codebase includes MSP430 embedded C programming for the PCB range finder, ESP32 multi-threaded applications for sensor networks, and advanced control algorithms for automated systems. Features include interrupt handling, state machines, communication protocol implementation (SPI, I²C, UART), and power management optimization.
+      </p>
+      <div class="project-links">
+        <a href="https://github.com/JT5016/EmbeddedSystemsCode.git" target="_blank" class="btn-link">View Range Finder Code</a>
+        <a href="https://github.com/JT5016/PUMPED-hardware.git" target="_blank" class="btn-link">View PUMPED Code</a>
+      </div>
     </div>
   </section>
+
+  <!-- Image Modals -->
+  <div id="modal1" class="image-modal">
+    <div class="modal-content">
+      <a href="#" class="close-modal">&times;</a>
+      <img src="images/pumped-pcb-main.png" alt="PUMPED Main PCB Board" class="modal-image">
+      <div class="modal-caption">
+        <h3>PUMPED Main Control PCB</h3>
+        <p>ESP32-based main control board with integrated power management, sensor interfaces, and communication modules.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal2" class="image-modal">
+    <div class="modal-content">
+      <a href="#" class="close-modal">&times;</a>
+      <img src="images/pumped-power-pcb33.jpg" alt="PUMPED 3.3V Regulator" class="modal-image">
+      <div class="modal-caption">
+        <h3>3.3V Power Distribution PCB</h3>
+        <p>3.3V voltage regulator circuit with precision filtering and thermal management for low-power components.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal3" class="image-modal">
+    <div class="modal-content">
+      <a href="#" class="close-modal">&times;</a>
+      <img src="images/pumped-sensor-pcb.jpg" alt="PUMPED Sensor Interface PCB" class="modal-image">
+      <div class="modal-caption">
+        <h3>Sensor Interface Board</h3>
+        <p>HX711 amplifier PCB with precision load cell interface and thermocouple signal conditioning circuits.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal4" class="image-modal">
+    <div class="modal-content">
+      <a href="#" class="close-modal">&times;</a>
+      <img src="images/pumped-complete-system.jpg" alt="PUMPED Complete Hardware System" class="modal-image">
+      <div class="modal-caption">
+        <h3>Complete System Integration</h3>
+        <p>Fully assembled PUMPED device showing mechanical integration, wiring harnesses, and thermal printer integration.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal5" class="image-modal">
+    <div class="modal-content">
+      <a href="#" class="close-modal">&times;</a>
+      <img src="images/hardware-project1.jpg" alt="PCB Range Finder" class="modal-image">
+      <div class="modal-caption">
+        <h3>PCB Range Finder</h3>
+        <p>Custom PCB with MSP430 microcontroller and ultrasonic sensor for precise distance measurement.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal6" class="image-modal">
+    <div class="modal-content">
+      <a href="#" class="close-modal">&times;</a>
+      <img src="images/hardware-project2.jpg" alt="PCB Range Finder Prototype" class="modal-image">
+      <div class="modal-caption">
+        <h3>PCB Range Finder Prototype</h3>
+        <p>Breadboard prototype showing development process and component integration before PCB fabrication.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal7" class="image-modal">
+    <div class="modal-content">
+      <a href="#" class="close-modal">&times;</a>
+      <img src="images/pumped-power-pcb5.jpg" alt="PUMPED 5V Regulator" class="modal-image">
+      <div class="modal-caption">
+        <h3>5V Power Supply Circuit</h3>
+        <p>5V power supply circuit with current limiting and protection features for digital components.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal8" class="image-modal">
+    <div class="modal-content">
+      <a href="#" class="close-modal">&times;</a>
+      <img src="images/pumped-power-pcb12.jpg" alt="PUMPED 12V Regulator" class="modal-image">
+      <div class="modal-caption">
+        <h3>12V High-Current Regulator</h3>
+        <p>12V high-current regulator designed for heating elements and thermal printer power supply.</p>
+      </div>
+    </div>
+  </div>
 
   <!-- Reuse your footer if you want to keep consistent branding -->
   <footer class="footer">

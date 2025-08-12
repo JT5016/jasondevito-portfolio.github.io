@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Jason Devito - Computer Engineer Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -14,7 +14,8 @@
       <nav>
         <ul class="nav-links">
           <li><a href="#hero">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#software-projects">Software</a></li>
+          <li><a href="#hardware-projects">Hardware</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -28,20 +29,107 @@
         <img src="images/profile.jpg" alt="Your Photo" class="profile-img" />
         <img src="images/ucf-logo.png" alt="UCF Logo" class="ucf-logo" />
       </div>
-      <h2 class="hero-title">Computer Engineer</h2>
+      <h2 class="hero-title">B.S in Computer Engineering</h2>
       <p class="hero-description">
         I leverage my passion for both hardware and software to create innovative, efficient solutions. With
         hands-on experience in designing integrated systems and developing robust software, I strive to bridge
         the gap between digital and physical technologies, driving progress and transforming ideas into real-world
         impact.
       </p>
-      <a href="#projects" class="hero-button">View My Work</a>
+      <div class="hero-buttons">
+        <a href="#software-projects" class="hero-button">View Software Projects</a>
+        <a href="#hardware-projects" class="hero-button-secondary">View Hardware Projects</a>
+      </div>
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="projects-section">
-    <h2 class="section-title">Projects</h2>
+
+  <!-- Software Projects Section -->
+  <section id="software-projects" class="projects-section">
+    <div class="section-header">
+      <span class="section-icon">💻</span>
+      <h2 class="section-title">Software Development Projects</h2>
+      <p class="section-description">Full-stack applications, mobile development, and AI-powered solutions</p>
+    </div>
+
+    <!-- PUMPED Mobile App -->
+    <div class="project-card featured-project">
+      <div class="project-badge">Featured Project</div>
+      <h2><strong>PUMPED Mobile App</strong></h2>
+      <h3>AI-Powered Breast Milk Management System</h3>
+      
+      <p><strong>PUMPED</strong> is a comprehensive iOS mobile application that revolutionizes breast milk management for new mothers through <strong>intelligent automation, AI-powered insights, and seamless hardware integration</strong>. Built with <strong>Swift and SwiftUI</strong>, the app connects to a custom IoT device to provide real-time monitoring, data analytics, and smart recommendations.</p>
+
+      <h3><strong>Key Features:</strong></h3>
+      
+      <div class="feature-list">
+          <h4><strong>🤖 AI-Powered Assistant</strong></h4>
+          <p><strong>ChatGPT-powered AI agent</strong> provides intelligent assistance for basic parenting tasks and questions. The AI assistant helps with general milk storage guidance, feeding advice, and answers common questions without accessing user data, ensuring complete privacy protection.</p>
+
+          <h4><strong>🔬 Allergen Status Tracking</strong></h4>
+          <p><strong>Simple allergen tracking system</strong> allows mothers to mark milk bags as allergen-free or containing allergens. The status is displayed in the inventory system for easy identification during feeding preparation and storage management.</p>
+
+          <h4><strong>📧 Smart Email Notifications</strong></h4>
+          <p><strong>Nodemailer-powered notification system</strong> sends automated email alerts when milk inventory levels are running low. Users receive timely notifications to ensure adequate milk supply is maintained for feeding schedules.</p>
+
+          <h4><strong>📱 Native iOS Development</strong></h4>
+          <p>Built entirely in <strong>Swift with SwiftUI framework</strong>, delivering a smooth, responsive user experience with native iOS design patterns. Features include <strong>intuitive navigation, real-time data visualization, and seamless device integration</strong>.</p>
+
+          <h4><strong>🗄️ Robust Data Management</strong></h4>
+          <p><strong>PostgreSQL database backend</strong> ensures secure, scalable data storage for all milk measurements, user profiles, and historical analytics. Advanced data modeling supports complex queries and reporting capabilities.</p>
+
+          <h4><strong>🌐 Full-Stack Integration</strong></h4>
+          <p><strong>Node.js server architecture</strong> with RESTful API endpoints handles all business logic, authentication, and data processing. Supports <strong>JWT-based authentication, role-based access control, and secure data transmission</strong>.</p>
+
+          <h4><strong>🔌 Real-Time Hardware Communication</strong></h4>
+          <p><strong>Direct HTTP request integration</strong> with custom IoT device enables real-time data synchronization. The app receives live measurement information from the hardware system including <strong>weight, volume, time stamps, and allergen status</strong> with automatic database storage.</p>
+
+          <h4><strong>✏️ Complete CRUD Operations</strong></h4>
+          <p><strong>Full data management capabilities</strong> allow users to create, read, update, and delete all measurement records. Features include <strong>batch editing, data export, search functionality, and advanced filtering options</strong>.</p>
+
+          <h4><strong>📦 Inventory Management System</strong></h4>
+          <p><strong>Comprehensive inventory page</strong> displays all stored milk bags with volume data, collection time stamps, and allergen status indicators. Features <strong>edit functionality</strong> to modify volume amounts and <strong>delete options</strong> when bags are empty, providing complete milk storage oversight.</p>
+
+          <h4><strong>🔐 Secure Authentication System</strong></h4>
+          <p><strong>Complete user authentication flow</strong> with dedicated login and registration pages using <strong>JWT token-based security</strong>. Secure user sessions ensure data privacy and authenticated access to all app features.</p>
+      </div>
+
+      <h3><strong>Technical Stack:</strong></h3>
+      <div class="tech-stack-grid">
+        <div class="tech-category">
+          <h4>Frontend</h4>
+          <p>Swift, SwiftUI, iOS SDK</p>
+        </div>
+        <div class="tech-category">
+          <h4>Backend</h4>
+          <p>Node.js, Express.js, RESTful APIs</p>
+        </div>
+        <div class="tech-category">
+          <h4>Database</h4>
+          <p>PostgreSQL with advanced indexing</p>
+        </div>
+        <div class="tech-category">
+          <h4>AI Integration</h4>
+          <p>ChatGPT API for intelligent assistant</p>
+        </div>
+        <div class="tech-category">
+          <h4>Communication</h4>
+          <p>HTTP/HTTPS, JSON data exchange</p>
+        </div>
+        <div class="tech-category">
+          <h4>Authentication</h4>
+          <p>JWT tokens, OAuth 2.0</p>
+        </div>
+        <div class="tech-category">
+          <h4>Hardware Integration</h4>
+          <p>ESP32 IoT device communication</p>
+        </div>
+      </div>
+      
+      <div class="project-links">
+        <a href="https://github.com/JT5016/PUMPED-software.git" target="_blank" class="btn-link">View Mobile App on GitHub</a>
+      </div>
+    </div>
 
     <!-- Journey Journal -->
     <div class="project-card">
@@ -53,22 +141,10 @@
         backend, and part of the frontend</strong>. We used <strong>SwaggerHub</strong> for API documentation.
       </p>
       <p><strong>Note:</strong> The server is no longer running due to payment reasons, but all the code is available.</p>
-      <p>
-        <a
-          href="https://github.com/JT5016/Journey-Journal-Project.git"
-          target="_blank"
-          class="btn-link"
-          >View Web App on GitHub</a
-        >
-      </p>
-      <p>
-        <a
-          href="https://github.com/JT5016/Mobile-app.git"
-          target="_blank"
-          class="btn-link"
-          >View Mobile App on GitHub</a
-        >
-      </p>
+      <div class="project-links">
+        <a href="https://github.com/JT5016/Journey-Journal-Project.git" target="_blank" class="btn-link">View Web App on GitHub</a>
+        <a href="https://github.com/JT5016/Mobile-app.git" target="_blank" class="btn-link">View Mobile App on GitHub</a>
+      </div>
     </div>
 
     <!-- House Price Prediction ML Model -->
@@ -81,22 +157,10 @@
         was built using <strong>Python, Scikit-Learn, and Streamlit</strong>.
       </p>
       <p>Users can input various house features and receive a predicted sale price instantly.</p>
-      <p>
-        <a
-          href="https://github.com/JT5016/House-price-ML-model.git"
-          target="_blank"
-          class="btn-link"
-          >View Project on GitHub</a
-        >
-      </p>
-      <p>
-        <a
-          href="https://house-price-ml-model-xyz.streamlit.app/"
-          target="_blank"
-          class="btn-link"
-          >Live Demo on Streamlit</a
-        >
-      </p>
+      <div class="project-links">
+        <a href="https://github.com/JT5016/House-price-ML-model.git" target="_blank" class="btn-link">View Project on GitHub</a>
+        <a href="https://house-price-ml-model-xyz.streamlit.app/" target="_blank" class="btn-link">Live Demo on Streamlit</a>
+      </div>
     </div>
 
     <!-- Contact Manager -->
@@ -107,12 +171,9 @@
         user-friendly interface. Built using <strong>SQL, PHP, HTML, CSS, and JavaScript</strong>. I worked on the
         <strong>SQL database and backend PHP functionalities</strong> to handle user data securely.
       </p>
-      <a
-        href="https://github.com/JT5016/Contact-Manager.git"
-        target="_blank"
-        class="btn-link"
-        >View on GitHub</a
-      >
+      <div class="project-links">
+        <a href="https://github.com/JT5016/Contact-Manager.git" target="_blank" class="btn-link">View on GitHub</a>
+      </div>
     </div>
 
     <!-- UEMS (University Event Management System) -->
@@ -124,12 +185,9 @@
         <strong>JavaScript</strong>, <strong>HTML</strong>, and <strong>CSS</strong>. This application lets students
         and admins create, approve, and manage campus events from a simple web interface, as well as import events from university website, and choose a location via a map API.
       </p>
-
-      <p>
-        <a href="https://github.com/JT5016/DatabaseProject.git" target="_blank" class="btn-link"
-          >View UEMS on GitHub</a
-        >
-      </p>
+      <div class="project-links">
+        <a href="https://github.com/JT5016/DatabaseProject.git" target="_blank" class="btn-link">View UEMS on GitHub</a>
+      </div>
     </div>
 
     <!-- Natural-Language → SQL Query Converter -->
@@ -138,45 +196,96 @@
       <p>
         A tool that takes plain-English questions and turns them into valid SQL queries. The frontend is built in
         <strong>React</strong>, and the backend is a <strong>Node.js</strong> server. Internally, it calls the
-        <strong>ChatGPT API</strong> to translate user-entered text (e.g., “Show me all students enrolled in Spring
-        2024”) into a parametrized SQL statement. Once ChatGPT generates the SQL, the server executes it and returns results.
+        <strong>ChatGPT API</strong> to translate user-entered text (e.g., "Show me all students enrolled in Spring
+        2024") into a parametrized SQL statement. Once ChatGPT generates the SQL, the server executes it and returns results.
       </p>
-      <p>
-        <a
-          href="https://github.com/JT5016/OPENAI-SQL-app.git"
-          target="_blank"
-          class="btn-link"
-          >View NL→SQL Converter on GitHub</a
-        >
-      </p>
+      <div class="project-links">
+        <a href="https://github.com/JT5016/OPENAI-SQL-app.git" target="_blank" class="btn-link">View NL→SQL Converter on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hardware Projects Section -->
+  <section id="hardware-projects" class="hardware-projects-section">
+    <div class="section-header">
+      <span class="section-icon">⚡</span>
+      <h2 class="section-title">Hardware & Embedded Systems</h2>
+      <p class="section-description">IoT devices, PCB design, microcontroller programming, and electronic circuits</p>
     </div>
 
-    <!-- Hardware Projects Card (Full-Width Bottom) -->
-    <div class="hardware-card1">
-      <h3>Hardware Projects</h3>
-      <p>
-        Check out some of the hardware and embedded systems I've worked on, featuring microcontrollers, sensors,
-        electronic circuits, and more.
-      </p>
-      <a href="hardware.html" class="btn-link">View Hardware Projects</a>
+    <!-- Hardware Projects Preview Card -->
+    <div class="hardware-preview-card">
+      <div class="hardware-preview-content">
+        <div class="hardware-preview-text">
+          <h3>Embedded Systems & Electronic Design</h3>
+          <p>
+            Explore my hardware engineering projects featuring <strong>microcontroller programming</strong>, 
+            <strong>PCB design</strong>, <strong>sensor integration</strong>, and <strong>IoT systems</strong>. 
+            From ESP32-based control systems to custom electronic circuits, these projects showcase 
+            hands-on engineering with real-world applications.
+          </p>
+          <div class="hardware-highlights">
+            <div class="highlight-item">
+              <span class="highlight-icon">🔌</span>
+              <span>PUMPED IoT Control System</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">📡</span>
+              <span>ESP32 Sensor Networks</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🔧</span>
+              <span>Custom PCB Design</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">⚙️</span>
+              <span>Embedded C/C++ Programming</span>
+            </div>
+          </div>
+        </div>
+        <div class="hardware-preview-action">
+          <a href="hardware.html" class="hardware-btn">
+            <span>View All Hardware Projects</span>
+            <span class="btn-arrow">→</span>
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Contact Section -->
   <section id="contact" class="contact-section">
-    <h2 class="section-title">Contact</h2>
-    <p>Email: <strong>jasondevito1029@gmail.com</strong></p>
-    <p>
-      GitHub:
-      <a href="https://github.com/JT5016" target="_blank">github.com/JT5016</a>
-    </p>
-    <p>
-      LinkedIn:
-      <a href="https://www.linkedin.com/in/jason-devito-63b9242aa" target="_blank"
-        >www.linkedin.com/in/jason-devito-63b9242aa</a
-      >
-    </p>
-    <p>Mobile Number: 772-486-6211</p>
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <span class="contact-icon">📧</span>
+        <div>
+          <h4>Email</h4>
+          <p><strong>jasondevito1029@gmail.com</strong></p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">🔗</span>
+        <div>
+          <h4>GitHub</h4>
+          <p><a href="https://github.com/JT5016" target="_blank">github.com/JT5016</a></p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">💼</span>
+        <div>
+          <h4>LinkedIn</h4>
+          <p><a href="https://www.linkedin.com/in/jason-devito-63b9242aa" target="_blank">jason-devito-63b9242aa</a></p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">📱</span>
+        <div>
+          <h4>Phone</h4>
+          <p><strong>772-486-6211</strong></p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Footer -->
